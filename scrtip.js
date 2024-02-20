@@ -1,2 +1,3 @@
-
-console.log('hellow')
+function setPrice  (){
+        
+}
