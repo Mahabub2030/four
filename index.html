@@ -126,7 +126,7 @@
             <div class="flex  items-center mx-auto ">
        
               <img src="images/seat-green-filled.png" alt="">
-              <span class="text-[#1DD100] text-base font-medium">40 Seats left</span>
+              <span id="totalseat" class="text-[#1DD100] text-base font-medium">40 Seats left</span>
 
 
             
@@ -207,74 +207,74 @@
           </div>
          
             <ul class="flex items-center justify-between mt-14 gap-3 py-3">
-              <li><button class="text-center w-20  h-14 text-base font-medium">A</button></li>
-              <li><button class="btn w-28 h-14  text-center text-base font-medium">A1</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">A2</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">A3</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">A4</button></li>
+              <li><button  class="text-center w-20  h-14 text-base font-medium">A</button></li>
+              <li><button onclick="seatBook()" id="A1" class="btn  w-28 h-14  text-center text-base font-medium">A1</button></li>
+              <li><button onclick="seatBook()"  class="btn w-28 h-14 text-center text-base font-medium">A2</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">A3</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">A4</button></li>
             </ul>
             <ul class="flex items-center justify-between gap-3 py-3">
-              <li><button class="text-center w-20  h-14 text-base font-medium">B</button></li>
-              <li><button class="btn w-28 h-14  text-center text-base font-medium">B1</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">B2</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">AB3</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">B4</button></li>
+              <li><button  class="text-center w-20  h-14 text-base font-medium">B</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14  text-center text-base font-medium">B1</button></li>
+              <li><button onclick="seatBook()"class="btn w-28 h-14 text-center text-base font-medium">B2</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">AB3</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">B4</button></li>
             </ul>
             <ul class="flex items-center justify-between gap-3 py-3">
-              <li><button class="text-center w-20  h-14 text-base font-medium">C</button></li>
-              <li><button class="btn w-28 h-14  text-center text-base font-medium">C1</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">C2</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">C3</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">C4</button></li>
+              <li><button  class="text-center w-20  h-14 text-base font-medium">C</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14  text-center text-base font-medium">C1</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">C2</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">C3</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">C4</button></li>
             </ul>
             <ul class="flex items-center justify-between gap-3 py-3">
               <li><button class="text-center w-20  h-14 text-base font-medium">D</button></li>
-              <li><button class="btn w-28 h-14  text-center text-base font-medium">D1</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">D2</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">D3</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">D4</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14  text-center text-base font-medium">D1</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">D2</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">D3</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">D4</button></li>
             </ul>
             <ul class="flex items-center justify-between gap-3 py-3">
               <li><button class="text-center w-20  h-14 text-base font-medium">E</button></li>
-              <li><button class="btn w-28 h-14  text-center text-base font-medium">E1</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">E2</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">E3</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">E4</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14  text-center text-base font-medium">E1</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">E2</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">E3</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">E4</button></li>
             </ul>
             <ul class="flex items-center justify-between gap-3 py-3">
               <li><button class="text-center w-20  h-14 text-base font-medium">F</button></li>
-              <li><button class="btn w-28 h-14  text-center text-base font-medium">F1</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">F2</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">F3</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">F4</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14  text-center text-base font-medium">F1</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">F2</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">F3</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">F4</button></li>
             </ul>
             <ul class="flex items-center justify-between gap-3 py-3">
               <li><button class="text-center w-20  h-14 text-base font-medium">G</button></li>
-              <li><button class="btn w-28 h-14  text-center text-base font-medium">G1</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">G2</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">G3</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">G4</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14  text-center text-base font-medium">G1</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">G2</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">G3</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">G4</button></li>
             </ul>
             <ul class="flex items-center justify-between gap-3 py-3">
               <li><button class="text-center w-20  h-14 text-base font-medium">H</button></li>
-              <li><button class="btn w-28 h-14  text-center text-base font-medium">H1</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">H2</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">H3</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">H4</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14  text-center text-base font-medium">H1</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">H2</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">H3</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">H4</button></li>
             </ul>
             <ul class="flex items-center justify-between gap-3 py-3">
               <li><button class="text-center w-20  h-14 text-base font-medium">I</button></li>
-              <li><button class="btn w-28 h-14  text-center text-base font-medium">I1</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">I2</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">I3</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">I4</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14  text-center text-base font-medium">I1</button></li>
+              <li><button onclick="seatBook()"  class="btn w-28 h-14 text-center text-base font-medium">I2</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">I3</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">I4</button></li>
             </ul>
             <ul class="flex items-center justify-between gap-3 py-3">
               <li><button class="text-center w-20  h-14 text-base font-medium">J</button></li>
-              <li><button class="btn w-28 h-14  text-center text-base font-medium">J1</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">J2</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">J3</button></li>
-              <li><button class="btn w-28 h-14 text-center text-base font-medium">J4</button></li>
+              <li><button onclick="seatBook()" id="seatnum" class="btn w-28 h-14  text-center text-base font-medium">J1</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">J2</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">J3</button></li>
+              <li><button onclick="seatBook()" class="btn w-28 h-14 text-center text-base font-medium">J4</button></li>
             </ul>
           
           
