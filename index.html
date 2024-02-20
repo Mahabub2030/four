@@ -17,12 +17,12 @@
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
-                <!-- <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
                     <li><a class="text-base font-medium">Home</a></li>
                     <li><a class="text-base font-medium">About</a></li>
                     <li><a class="text-base font-medium">Destination</a></li>
                     <li><a class="text-base font-medium">Search</a></li>
-                </ul> -->
+                </ul>
               </div>
               <a class="btn   text-4xl">P-Ticket</a>
             </div>
@@ -126,7 +126,7 @@
             <div class="flex  items-center mx-auto ">
        
               <img src="images/seat-green-filled.png" alt="">
-              <span id="totalseat" class="text-[#1DD100] text-base font-medium">40 Seats left</span>
+              <span class="text-[#1DD100] text-base font-medium" > <span id="totalseat" class=" text-[#1DD100]"></span> Seats left</span>
 
 
             
@@ -288,17 +288,19 @@
             <div class="flex justify-between ">
               <p class="text-base font-medium">Seat <span class="text-[#1DD100]"></span></p> 
               <p class="text-base font-medium">Class</p>
-              <p class="text-base font-medium">Price</p>
+              <p class="text-base font-medium" >Price</p>
             </div>
-            <ul class="flex justify-between py-3">
-              <li><a href="" class="text-base font-medium">CA</a></li>
+            <ul class="flex justify-between py-3" id="seatcreate">
+
+                <li><a href="" class="text-base font-medium" id="Serialnumber">CA</a></li>
               <li><a href="" class="text-base font-medium">Ecomice</a></li>
-              <li><a href="" class="text-base font-medium"></a>500</li>
+              <li><a href="" class="text-base font-medium" id="price"></a></li>
+
             </ul>
             <hr>
             <ul class="flex justify-between py-3">
-              <li><span  class="text-base font-medium">Total</span></li>
-              <li><span  class="text-base font-medium">price:</span></li>
+              <li><span  class="text-base font-medium" >Total</span></li>
+              <li><span  class="text-base font-medium" id="total"></span></li>
             </ul>
             <ul class="flex justify-between py-3">
               <input type="text" class="text-base font-medium w-80 bg-gray-50 disabled:">
@@ -307,14 +309,15 @@
             </ul>
             <ul class="flex justify-between py-5">
               <li><span  class="text-base font-medium">Grand Total</span></li>
-              <li><span  class="text-base font-medium">price:</span></li>
+              <li><span  class="text-base font-medium" id="Grand">price:</span></li>
             </ul>
 
             <div class="form-content">
-              <form action="">
+              <form action="btn.html" onsubmit="submitValidation()">
                 <div class="block p-3">
                   <label for="Passenger" class="py-4 font-semibold text-base ">Passenger Name*</label>
                   <input type="text" id="Passenger" class="w-full mt-4 rounded-lg h-14 font-normal text-base bg-gray-50" placeholder="Enter your name">
+                  <p class="text-red-500" id="alters"></p>
                 </div>
                 <div class="block p-3">
                   <label for="phone" class="py-4 font-semibold text-base">Phone Number* </label>
@@ -324,7 +327,7 @@
                   <label for="email" class=" py-4 font-semibold text-base">Email ID*</label>
                   <input type="text"id="email" class="w-full mt-4 rounded-lg h-14 font-normal text-base bg-gray-50" placeholder="Enter your email">
                 </div>
-                <button class="btn mt-4 w-full h-16 overflow-hidden text-xl  font-semibold bg-[#1DD100] text-[#ffff]">Next</button>
+                <button class="btn mt-4 w-full h-16 overflow-hidden text-xl  font-semibold bg-[#1DD100] text-[#ffff]" type="submit">Next</button>
               </form>
               <div class="flex items-center justify-around mt-8">
                 <a href="" class="text-base border-b-[#030712] text-[#030712] font-normal">Terms and Conditions</a>
@@ -332,47 +335,18 @@
               </div>
             </div>
         </div>
-        
+         <!--part2-->
       </div>
       <!--end-->
     </main>
-
-
-
+    <footer class="container mx-auto max-w-6xl">
     
 
-      <footer class="footer p-10 bg-base-300 text-base-content">
-        <nav class="">
-          <h6 class="footer-title text-3xl m-4">P-Ticket</h6> 
-          <a class="link link-hover">P-Ticket is a digital platform to make your</a>
-          <a class="link link-hover">daily commuting better.</a>
-         
-     </nav> 
 
-     <!-- <div class="bg-white min-h-full"> -->
-      <div class="flex mt-52 gap-10 text-xl">
-        <a href="">Terms & condition</a>
-        <a href="">Return & refund policy</a>
-        <a href="">Privacy policy</a>
-      </div>
 
-     </div>
-       
-        <nav class="">
-          <h6 class="footer-title gap-5 m-8">Download our app</h6> 
-          <div class="grid grid-flow-col gap-4">
-            <a class="flex"><img src="./images/playstore.png" alt=""> <span  class="">GETITON  
+            </div>
 
-            </span> <br> Google playstore</a>
-          </div>
-        </nav>
-        <div>
-          
-        </div>
-       
-      </footer>
-    
-</div>
-    <script src="scrtip.js"></script>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>

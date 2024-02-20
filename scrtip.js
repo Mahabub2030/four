@@ -1,8 +1,8 @@
 
         
-     let seatnumber = 40;
+     let seatnumber =40;
      setinnText('totalseat',seatnumber); 
-     let  count = 0;
+     let count=0;
  
  const buttton=document.querySelectorAll("button");
  let arr=Array.from(buttton);
@@ -31,7 +31,7 @@
              setinnText('totalseat','Emptry');
              
           }else{
-             seatnumber = seatnumber-1;
+             seatnumber=seatnumber-1;
             setinnText('totalseat',seatnumber); 
             
           }
@@ -81,3 +81,5 @@
      textparameter.innerHTML=result;
      
  }
+ 
+ 
