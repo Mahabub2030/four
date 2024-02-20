@@ -1,4 +1,4 @@
-
+//  scripit section stars here 
         
      let seatnumber =40;
      setinnText('totalseat',seatnumber); 
