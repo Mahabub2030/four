@@ -1,11 +1,11 @@
 //  scripit section stars here 
         
-     let seatnumber =40;
+     let seatnumber = 40;
      setinnText('totalseat',seatnumber); 
-     let count=0;
+     let count= 0;
  
  const buttton=document.querySelectorAll("button");
- let arr=Array.from(buttton);
+ let arr = Array.from(buttton);
  arr.forEach((btn)=>{
      btn.addEventListener("click",()=>{
          const perprice=500;
@@ -22,17 +22,17 @@
 
     function activefunction(){
      const chancebg=document.getElementById('A1');
-     //chancebg.style.backgroundColor='#1DD100'
+     chancebg.style.backgroundColor='#1DD100'
      chancebg.classList.add('active')
-    }
+    };
      
   /***totalseat function start */ 
      function totalseat(){
-         if(seatnumber<=1){
+         if(seatnumber <= 1){
              setinnText('totalseat','Emptry');
              
           }else{
-             seatnumber=seatnumber-1;
+             seatnumber = seatnumber-1;
             setinnText('totalseat',seatnumber); 
             
           }
@@ -49,8 +49,8 @@
  
  function submitValidation(e){
      const passger=setelemtId('Passenger');
-     const Phone=setelemtId('phone').value;
-     const email=setelemtId('email').value;
+     const Phone=setelemtId('phone'). value;
+     const email=setelemtId('email'). value;
  
      if(passger===null || passger===""){
          alert("please enter your phone Number")
