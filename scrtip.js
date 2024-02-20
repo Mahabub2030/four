@@ -17,8 +17,9 @@
          totalseat();
          activefunction()
  
-     })
- })
+     });
+ });
+
     function activefunction(){
      const chancebg=document.getElementById('A1');
      //chancebg.style.backgroundColor='#1DD100'
@@ -35,7 +36,7 @@
             setinnText('totalseat',seatnumber); 
             
           }
-     }
+     };
        
   /***totalseat function start */ 
  
@@ -44,7 +45,7 @@
  
  function seatSerialnumber(){
    const serialnum= getElementId('Serialnumber')
- }
+ };
  
  function submitValidation(e){
      const passger=setelemtId('Passenger');
@@ -81,5 +82,8 @@
      textparameter.innerHTML=result;
      
  }
+
+
+//  funsion section end here //
  
  
