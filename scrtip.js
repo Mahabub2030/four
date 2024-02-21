@@ -33,6 +33,7 @@
     };
      
   /***totalseat function start */ 
+
      function totalseat(){
          if(seatnumber <= 1){
              setinnText('totalseat','Emptry');
@@ -44,21 +45,26 @@
           }
      };
        
-     function set(){
-         if(addSheet <= 1){
-             setinnText('min','Emptry');
+    //  this code for raf
+    //  function Pluse(){
+    //      if(seatnumber => 1){
+    //          setinnText('Pluse',"Emptry" )
              
-          }else{
-            addShee = seat +1;
-            setinnText('addSheet',seat); 
+    //       }else{
+    //         seatnumber = seatnumber +1;
+    //         setinnText('Pluse' ,seatnumber); 
             
-          }
-     };
+    //       }
+    //  };
+
+
+     function seatBook() {
+        count+1; // Increment the count by 1
+        document.getElementById('SeatAdd').innerHTML = "Seat: " + count; // Update the display
+      }
+  
        
-   
   /***totalseat function start */ 
- 
- 
  
  
  function seatSerialnumber(){
