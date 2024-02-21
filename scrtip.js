@@ -44,7 +44,7 @@
           }
      };
        
-     function set(elementid){
+     function set(){
          if(addSheet <= 1){
              setinnText('min','Emptry');
              
