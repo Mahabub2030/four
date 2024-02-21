@@ -7,23 +7,29 @@
  const buttton=document.querySelectorAll("button");
  let arr = Array.from(buttton);
  arr.forEach((btn)=>{
-     btn.addEventListener("click",()=>{
+     btn.addEventListener("click",(addSheet)=>{
          const perprice=500;
-         count=count+1;      
-         const total=perprice*count;
+         count = count + 1 ;      
+         const total = perprice * count;
          setinnText('total',total); 
          setinnText('Grand',total); 
          setinnText('price',perprice); 
          totalseat();
-         activefunction()
+         activefunction();
  
      });
  });
 
     function activefunction(){
-     const chancebg=document.getElementById('A1');
-     chancebg.style.backgroundColor='#1DD100'
-     chancebg.classList.add('active')
+     const chancebg = document.getElementById('A1');
+     chancebg.style.backgroundColor ='#1DD100'
+     chancebg.classList.add('#1DD100');
+    };
+     
+    function activefunction(){
+     const chancebg = document.getElementById('B1');
+     chancebg.style.backgroundColor ='#1DD100'
+     chancebg.classList.add('#1DD100');
     };
      
   /***totalseat function start */ 
@@ -38,6 +44,18 @@
           }
      };
        
+     function set(elementid){
+         if(addSheet <= 1){
+             setinnText('min','Emptry');
+             
+          }else{
+            addShee = seat +1;
+            setinnText('addSheet',seat); 
+            
+          }
+     };
+       
+   
   /***totalseat function start */ 
  
  
