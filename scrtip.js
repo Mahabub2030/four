@@ -31,6 +31,11 @@
      chancebg.style.backgroundColor ='#1DD100'
      chancebg.classList.add('#1DD100');
     };
+    function activefunction(){
+     const chancebg = document.getElementById('B1');
+     chancebg.style.backgroundColor ='#1DD100'
+     chancebg.classList.add('#1DD100');
+    };
      
   /***totalseat function start */ 
 
@@ -44,6 +49,19 @@
             
           }
      };
+
+     function seatBook(buttonId) {
+        var button = document.getElementById(buttonId);
+        button.style.backgroundColor = "red"; // Change to any color you desire
+      }
+
+
+
+
+
+
+
+
        
     //  this code for raf
     //  function Pluse(){
@@ -60,7 +78,7 @@
 
      function seatBook() {
         count+1; // Increment the count by 1
-        document.getElementById('SeatAdd').innerHTML = "Seat: " + count; // Update the display
+        document.getElementById('SeatAdd').innerHTML = "Seat:" + count; // Update the display
       }
   
        
