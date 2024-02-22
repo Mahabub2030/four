@@ -2,7 +2,7 @@
         
      let seatnumber = 40;
      setinnText('totalseat',seatnumber); 
-     let count= 0;
+     let count= 1;
  
  const buttton=document.querySelectorAll("button");
  let arr = Array.from(buttton);
