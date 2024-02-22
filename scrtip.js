@@ -8,7 +8,7 @@
  let arr = Array.from(buttton);
  arr.forEach((btn)=>{
      btn.addEventListener("click",(addSheet)=>{
-         const perprice=500;
+         const perprice=550;
          count = count + 1 ;      
          const total = perprice * count;
          setinnText('total',total); 
@@ -20,24 +20,27 @@
      });
  });
 
-    function activefunction(){
+    function activefunction(seatBook){
      const chancebg = document.getElementById('A1');
      chancebg.style.backgroundColor ='#1DD100'
      chancebg.classList.add('#1DD100');
     };
      
-    function activefunction(){
-     const chancebg = document.getElementById('B1');
-     chancebg.style.backgroundColor ='#1DD100'
-     chancebg.classList.add('#1DD100');
-    };
-    function activefunction(){
-     const chancebg = document.getElementById('B1');
-     chancebg.style.backgroundColor ='#1DD100'
-     chancebg.classList.add('#1DD100');
-    };
+
+    // function activefunction(){
+    //  const chancebg = document.getElementById('B1');
+    //  chancebg.style.backgroundColor ='#1DD100'
+    //  chancebg.classList.add('#1DD100');
+    // };
+    // function activefunction(seatBook){
+    //  const chancebg = document.getElementById('B1');
+    //  chancebg.style.backgroundColor ='#1DD100'
+    //  chancebg.classList.add('#1DD100');
+    // };
      
   /***totalseat function start */ 
+
+  
 
      function totalseat(){
          if(seatnumber <= 1){
@@ -54,6 +57,10 @@
         var button = document.getElementById(buttonId);
         button.style.backgroundColor = "red"; // Change to any color you desire
       }
+
+      document.getElementById('C1').addEventListener('seatBook', function(seatBook) {
+        this.style.backgroundColor = getBackraoundColor('#1DD100')
+      });
 
 
 
