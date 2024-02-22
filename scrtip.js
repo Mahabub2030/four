@@ -27,11 +27,57 @@
     };
      
 
-    // function activefunction(){
-    //  const chancebg = document.getElementById('B1');
-    //  chancebg.style.backgroundColor ='#1DD100'
-    //  chancebg.classList.add('#1DD100');
-    // };
+    function seatBook(){
+     const chancebg = document.getElementById('B1');
+     chancebg.style.backgroundColor ='#1DD100'
+     chancebg.classList.add('#1DD100');
+    };
+
+    function activefunction(seatBook) {
+        const button = document.getElementById(seatBook);
+        button.style.backgroundColor = '#1DD100';
+        button.classList.add('click'); // Add a class for styling if needed
+      }
+
+      function activefunction(seatBook) {
+        const button = seatBook.target;
+        button.style.backgroundColor = '#1DD100';
+        button.classList.add('active'); // Add a class for styling if needed
+      }
+      
+      document.addEventListener('DOMContentLoaded', function() {
+        const buttons = document.querySelectorAll('#A1, #A2, #A3, #A4');
+      
+        buttons.forEach(function(button) {
+          button.addEventListener('click', activefunction);
+        });
+      });
+      
+
+    //   function activefunction(seatBook) {
+    //     const button = B1.target;
+    //     button.style.backgroundColor = '#1DD100';
+    //     button.classList.add('active'); // Add a class for styling if needed
+    //   }
+      
+
+    //   document.addEventListener('DOMContentLoaded', function() {
+    //     const buttons = document.querySelectorAll('A1.A2,A3,A4');
+      
+    //     buttons.forEach(function() {
+    //     seatBook.addEventListener('click', activefunction);
+    //     });
+    //   });
+      
+    //   activefunction('A1');
+    //   activefunction('A2');
+    //   activefunction('A3');
+    //   activefunction('A4');
+
+      
+
+
+
     // function activefunction(seatBook){
     //  const chancebg = document.getElementById('B1');
     //  chancebg.style.backgroundColor ='#1DD100'
@@ -40,7 +86,7 @@
      
   /***totalseat function start */ 
 
-  
+
 
      function totalseat(){
          if(seatnumber <= 1){
