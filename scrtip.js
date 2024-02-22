@@ -2,9 +2,9 @@
         
      let seatnumber = 40;
      setinnText('totalseat',seatnumber); 
-     let count= 1;
+     let count= 0;
  
- const buttton=document.querySelectorAll("button");
+ const buttton =document.querySelectorAll("button");
  let arr = Array.from(buttton);
  arr.forEach((btn)=>{
      btn.addEventListener("click",(addSheet)=>{
@@ -142,17 +142,53 @@
 
 // inpu code add here
 
-document.addEventListener('DOMContentLoaded', function() {
-    const emailInput = document.getElementById('emailAddress');
-    const submitButton = document.getElementById('submitBtn');
+// document.addEventListener('DOMContentLoaded', function() {
+//     const emailInput = document.getElementById('emailAddress');
+//     const submitButton = document.getElementById('submitBtn');
     
-    emailInput.addEventListener('input', function() {
-        if (isValidEmail(emailAddress.value)) {
+//     emailInput.addEventListener('input', function() {
+//         if (isValidEmail(emailAddress.value)) {
+//             submitButton.disabled = false;
+//         } else {
+//             submitButton.disabled = true;
+//         }
+//     });
+// });
+
+// function isValidEmail(email) {
+//     // Regular expression for validating email addresses
+//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//     return emailRegex.test(email);
+// }
+
+
+// button section  code for submit button
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const nameInput = document.getElementById('Passenger');
+    const emailAddressInput = document.getElementById('emailAddress');
+    const NumberdInput = document.getElementById('password');
+    const passwordInput = document.getElementById('password');
+    const submitButton = document.getElementById('submitButton');
+    
+    function checkInputs() {
+        const nameValid = nameInput.value.trim() !== '';
+        const emailValid = isValidEmail(emailAddressInput.value);
+        const passwordValid = passwordInput.value.trim() !== '';
+        const NumberInputValid = phoneNumbervalue.trim() !== '';
+        
+        if (nameInputameValid && phoneValid && emailValid) {
             submitButton.disabled = false;
         } else {
             submitButton.disabled = true;
         }
-    });
+    }
+    
+    nameInput.addEventListener('input', checkInputs);
+    emailAddressInput.addEventListener('input', checkInputs);
+    passwordInput.addEventListener('input', checkInputs);
+    phoneNumber.addEventListener('input', checkInputs);
 });
 
 function isValidEmail(email) {
