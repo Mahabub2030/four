@@ -35,7 +35,7 @@
 
   
 
-    //   new code form javascript add here
+    //   new code form javascript add here this code for btn section 
 
 
     function activefunction(seatBook) {
@@ -44,15 +44,15 @@
       
         if (selectedButtons.length < 4 || btn.classList.contains('active')) {
           btn.classList.toggle('active');
-          btn.style.backgroundColor = btn.classList.contains('active') ? '#1DD100' : ''; // Toggle background color
+          btn.style.backgroundColor = btn.classList.contains('active') ? '#1DD100' : ''; 
         } else {
-          // If more than 4 buttons are already selected, prevent selection
+
           alert('You can only select up to 4 buttons.');
         }
       }
       
       document.addEventListener('DOMContentLoaded', function() {
-        const buttons = document.querySelectorAll('.btn:nth-child(-n+4)'); // Select the first 4 buttons
+        const buttons = document.querySelectorAll('.btn:nth-child(-n+4)'); 
       
         buttons.forEach(function(btn) {
           btn.addEventListener('click', activefunction);
@@ -85,25 +85,6 @@
         this.style.backgroundColor = getBackraoundColor('#1DD100')
       });
 
-
-
-
-
-
-
-
-       
-    //  this code for raf
-    //  function Pluse(){
-    //      if(seatnumber => 1){
-    //          setinnText('Pluse',"Emptry" )
-             
-    //       }else{
-    //         seatnumber = seatnumber +1;
-    //         setinnText('Pluse' ,seatnumber); 
-            
-    //       }
-    //  };
 
 
      function seatBook() {
@@ -157,5 +138,28 @@
 
 
 //  funsion section end here //
+
+
+// inpu code add here
+
+document.addEventListener('DOMContentLoaded', function() {
+    const emailInput = document.getElementById('emailAddress');
+    const submitButton = document.getElementById('submitBtn');
+    
+    emailInput.addEventListener('input', function() {
+        if (isValidEmail(emailAddress.value)) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
+    });
+});
+
+function isValidEmail(email) {
+    // Regular expression for validating email addresses
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
  
  
